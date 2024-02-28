@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-listado-territorios',
+  selector: 'app-territorios-listado-territorios',
   templateUrl: './listado-territorios.component.html',
   styleUrl: './listado-territorios.component.css'
 })
