@@ -26,4 +26,12 @@ export class TerritoriosMainPageComponent {
     departamento: 'D',
     piso: '2'
   }]
+
+  onNuevaDireccion(direccion: Direccion): void {
+    this.direcciones.push(direccion);
+  }
+
+  onBorrarDireccion(i: number): void {
+    this.direcciones.splice(i,1);
+  }
 }

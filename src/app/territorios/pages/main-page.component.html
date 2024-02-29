@@ -3,9 +3,12 @@
 
 <div class="row">
     <div class="col">
-        <app-territorios-listado-direcciones [listadoDirecciones]="direcciones"></app-territorios-listado-direcciones>
+        <app-territorios-listado-direcciones 
+            [listadoDirecciones]="direcciones"
+            (onBorrarDireccion)="onBorrarDireccion($event)">
+        </app-territorios-listado-direcciones>
     </div>
     <div class="col">
-        <app-territorios-agregar-direccion></app-territorios-agregar-direccion>
+        <app-territorios-agregar-direccion (onNuevaDireccion)="onNuevaDireccion($event)"></app-territorios-agregar-direccion>
     </div>
 </div>

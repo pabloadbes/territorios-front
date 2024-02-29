@@ -1,5 +1,6 @@
-import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 import { TerritorioComponent } from "./components/territorio/territorio.component";
 import { ListadoDireccionesComponent } from "./components/listado-direcciones/listado-direcciones.component";
@@ -16,7 +17,8 @@ import { AgregarDireccionComponent } from "./components/agregar-direccion/agrega
     TerritorioComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     TerritoriosMainPageComponent,

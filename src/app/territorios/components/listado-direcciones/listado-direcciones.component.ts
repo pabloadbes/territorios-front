@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Direccion } from '../../interfaces/territorio.direccion';
 
 @Component({
@@ -10,4 +10,11 @@ export class ListadoDireccionesComponent {
 
   @Input()
   listadoDirecciones?: Direccion[];
+
+  @Output()
+  onBorrarDireccion: EventEmitter<number> = new EventEmitter();
+
+  borrarDireccion(i:number): void {
+    this.onBorrarDireccion.emit(i);
+  }
 }
