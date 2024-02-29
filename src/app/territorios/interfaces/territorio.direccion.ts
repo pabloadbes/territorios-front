@@ -1,6 +1,6 @@
 export interface Direccion {
     calle: String;
     numero: number;
-    departamento: string;
-    piso: string;
+    departamento?: string;
+    piso?: string;
 }

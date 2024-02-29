@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Direccion } from '../../interfaces/territorio.direccion';
 
 @Component({
   selector: 'app-territorios-listado-direcciones',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './listado-direcciones.component.css'
 })
 export class ListadoDireccionesComponent {
-  listadoDirecciones: string[] = ['Aristóbulo del Valle 583', 'Las Higueritas 2080', 'Huiñaj 18', 'Manuel García Fernandez 290'];
+
+  @Input()
+  listadoDirecciones?: Direccion[];
 }
