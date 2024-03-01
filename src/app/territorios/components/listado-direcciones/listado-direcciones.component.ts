@@ -15,7 +15,7 @@ export class ListadoDireccionesComponent {
   @Output()
   onBorrarDireccion: EventEmitter<string> = new EventEmitter();
 
-  borrarDireccion(id:string): void {
+  borrarDireccion(id?:string): void {
     if( !id ) return;
     this.onBorrarDireccion.emit(id);
   }

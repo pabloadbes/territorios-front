@@ -4,11 +4,11 @@
 <div class="row">
     <div class="col">
         <app-territorios-listado-direcciones
-            [listadoDirecciones]="territoriosService.direcciones"
-            (onBorrarDireccion)="territoriosService.borrarDireccionByYd($event)">
+            [listadoDirecciones]="direcciones"
+            (onBorrarDireccion)="borrarDireccion($event)">
         </app-territorios-listado-direcciones>
     </div>
     <div class="col">
-        <app-territorios-agregar-direccion (onNuevaDireccion)="territoriosService.onNuevaDireccion($event)"></app-territorios-agregar-direccion>
+        <app-territorios-agregar-direccion (onNuevaDireccion)="nuevaDireccion($event)"></app-territorios-agregar-direccion>
     </div>
 </div>

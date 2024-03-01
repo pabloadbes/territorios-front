@@ -31,7 +31,7 @@ export class TerritoriosService {
     piso: '2'
   }]
 
-  onNuevaDireccion(direccion: Direccion): void {
+  agregarDireccion(direccion: Direccion): void {
     const nuevaDireccion: Direccion = { id: uuid(), ...direccion }
     this.direcciones.push(nuevaDireccion);
   }
