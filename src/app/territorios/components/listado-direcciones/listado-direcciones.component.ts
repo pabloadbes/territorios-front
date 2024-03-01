@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Direccion } from '../../interfaces/territorio.direccion';
+import { compileNgModule } from '@angular/compiler';
 
 @Component({
   selector: 'app-territorios-listado-direcciones',
@@ -12,9 +13,10 @@ export class ListadoDireccionesComponent {
   listadoDirecciones?: Direccion[];
 
   @Output()
-  onBorrarDireccion: EventEmitter<number> = new EventEmitter();
+  onBorrarDireccion: EventEmitter<string> = new EventEmitter();
 
-  borrarDireccion(i:number): void {
-    this.onBorrarDireccion.emit(i);
+  borrarDireccion(id:string): void {
+    if( !id ) return;
+    this.onBorrarDireccion.emit(id);
   }
 }

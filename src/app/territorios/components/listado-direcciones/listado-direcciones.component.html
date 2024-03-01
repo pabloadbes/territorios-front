@@ -20,8 +20,8 @@
                     <span *ngIf="direccion.piso">| {{ direccion.piso }}° piso</span>
                 </div>
 
-                <button 
-                    (click)="borrarDireccion(i)"
+                <button
+                    (click)="borrarDireccion(direccion.id!)"
                     class="btn btn-danger">
                     X
                 </button>

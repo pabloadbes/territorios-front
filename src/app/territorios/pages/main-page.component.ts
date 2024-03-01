@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Direccion } from '../interfaces/territorio.direccion';
+import { TerritoriosService } from '../services/territorios.service';
 
 @Component({
     selector: 'app-territorios-main-page',
@@ -7,31 +7,5 @@ import { Direccion } from '../interfaces/territorio.direccion';
 })
 
 export class TerritoriosMainPageComponent {
-  direcciones: Direccion[] = [{
-    calle: 'Aristóbulo del Valle',
-    numero: 583,
-    departamento: 'B'
-  },{
-    calle: 'Las Higueritas',
-    numero: 2080
-  },{
-    calle: 'Huiñaj',
-    numero: 18
-  },{
-    calle: 'Manuel García Fernandez',
-    numero: 290
-  },{
-    calle: 'Albacete',
-    numero: 2005,
-    departamento: 'D',
-    piso: '2'
-  }]
-
-  onNuevaDireccion(direccion: Direccion): void {
-    this.direcciones.push(direccion);
-  }
-
-  onBorrarDireccion(i: number): void {
-    this.direcciones.splice(i,1);
-  }
+  constructor( public territoriosService: TerritoriosService) {}
 }
