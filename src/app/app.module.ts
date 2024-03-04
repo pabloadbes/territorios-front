@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { territoriosModule } from './territorios/territorios.module';
+import { TerritoriosModule } from './territorios/territorios.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { territoriosModule } from './territorios/territorios.module';
   ],
   imports: [
     BrowserModule,
-    territoriosModule
+    TerritoriosModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

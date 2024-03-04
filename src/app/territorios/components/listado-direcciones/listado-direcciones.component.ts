@@ -3,7 +3,7 @@ import { Direccion } from '../../interfaces/territorio.direccion';
 import { compileNgModule } from '@angular/compiler';
 
 @Component({
-  selector: 'app-territorios-listado-direcciones',
+  selector: 'territorios-listado-direcciones',
   templateUrl: './listado-direcciones.component.html',
   styleUrl: './listado-direcciones.component.css'
 })

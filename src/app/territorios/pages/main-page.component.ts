@@ -3,7 +3,7 @@ import { TerritoriosService } from '../services/territorios.service';
 import { Direccion } from '../interfaces/territorio.direccion';
 
 @Component({
-    selector: 'app-territorios-main-page',
+    selector: 'territorios-main-page',
     templateUrl: 'main-page.component.html'
 })
 

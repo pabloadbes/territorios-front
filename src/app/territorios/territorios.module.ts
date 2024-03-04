@@ -2,11 +2,11 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 
-import { TerritorioComponent } from "./components/territorio/territorio.component";
+import { AgregarDireccionComponent } from "./components/agregar-direccion/agregar-direccion.component";
 import { ListadoDireccionesComponent } from "./components/listado-direcciones/listado-direcciones.component";
 import { ListadoTerritoriosComponent } from "./components/listado-territorios/listado-territorios.component";
+import { TerritorioComponent } from "./components/territorio/territorio.component";
 import { TerritoriosMainPageComponent } from "./pages/main-page.component";
-import { AgregarDireccionComponent } from "./components/agregar-direccion/agregar-direccion.component";
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { AgregarDireccionComponent } from "./components/agregar-direccion/agrega
     ListadoTerritoriosComponent,
     TerritoriosMainPageComponent,
     TerritorioComponent
-  ],
+    ],
   imports: [
     CommonModule,
     FormsModule
@@ -24,4 +24,4 @@ import { AgregarDireccionComponent } from "./components/agregar-direccion/agrega
     TerritoriosMainPageComponent,
   ]
 })
-export class territoriosModule{}
+export class TerritoriosModule{}

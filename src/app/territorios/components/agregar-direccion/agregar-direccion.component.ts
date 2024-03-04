@@ -2,7 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { Direccion } from '../../interfaces/territorio.direccion';
 
 @Component({
-  selector: 'app-territorios-agregar-direccion',
+  selector: 'territorios-agregar-direccion',
   templateUrl: './agregar-direccion.component.html',
   styleUrl: './agregar-direccion.component.css',
 })

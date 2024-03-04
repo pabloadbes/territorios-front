@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-territorios-territorio',
+  selector: 'territorios-territorio',
   templateUrl: './territorio.component.html',
   styleUrl: './territorio.component.css'
 })
