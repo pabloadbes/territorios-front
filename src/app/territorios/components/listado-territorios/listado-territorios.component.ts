@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Territorio } from '../../interfaces/territorio';
 
 @Component({
   selector: 'territorios-listado-territorios',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './listado-territorios.component.css'
 })
 export class ListadoTerritoriosComponent {
-
+  @Input()
+  listadoTerritorios: Territorio[] = [];
 }
