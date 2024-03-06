@@ -3,6 +3,10 @@
         *ngFor="let territorio of listadoTerritorios" 
         class="col-md-3 col-sm-6">
         <div class="card mb-2 text-center bg-dark">
+            <img 
+                src="/assets/mapa.jpeg"
+                alt="pastafrola"
+                class="card-img-top">
             <div class="card-body text-white">
                 <p class="card-text">
                     <strong>{{ territorio.numero }} - </strong>{{ territorio.nombre | titlecase }}
