@@ -10,27 +10,39 @@ export class TerritoriosService {
   private _territorios: Territorio[] = [{
     id: uuid(),
     numero: 1,
-    nombre: 'telefónico'
+    nombre: 'telefónico',
+    img: '/assets/mapa.jpeg',
+    smImg: '/assets/mapa.jpeg'
   },{
     id: uuid(),
     numero: 2,
-    nombre: 'la cantera'
+    nombre: 'la cantera',
+    img: '/assets/mapa.jpeg',
+    smImg: '/assets/mapa.jpeg'
   },{
     id: uuid(),
     numero: 3,
-    nombre: 'mishki mayu'
+    nombre: 'mishki mayu',
+    img: '/assets/mapa.jpeg',
+    smImg: '/assets/mapa.jpeg'
   },{
     id: uuid(),
     numero: 4,
-    nombre: 'quijote'
+    nombre: 'quijote',
+    img: '/assets/mapa.jpeg',
+    smImg: '/assets/mapa.jpeg'
   },{
     id: uuid(),
     numero: 5,
-    nombre: 'la misión'
+    nombre: 'la misión',
+    img: '/assets/mapa.jpeg',
+    smImg: '/assets/mapa.jpeg'
   },{
     id: uuid(),
     numero: 6,
-    nombre: 'pipo'
+    nombre: 'pipo',
+    img: '/assets/mapa.jpeg',
+    smImg: '/assets/mapa.jpeg'
   }];
 
   private _direcciones: Direccion[] = [{

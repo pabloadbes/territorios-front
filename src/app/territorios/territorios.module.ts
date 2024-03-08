@@ -7,6 +7,7 @@ import { ListadoDireccionesComponent } from "./components/listado-direcciones/li
 import { ListadoTerritoriosComponent } from "./components/listado-territorios/listado-territorios.component";
 import { TerritorioComponent } from "./components/territorio/territorio.component";
 import { TerritoriosMainPageComponent } from "./pages/main-page.component";
+import { TarjetaTerritorioComponent } from './components/tarjeta-territorio/tarjeta-territorio.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TerritoriosMainPageComponent } from "./pages/main-page.component";
     ListadoDireccionesComponent,
     ListadoTerritoriosComponent,
     TerritoriosMainPageComponent,
-    TerritorioComponent
+    TerritorioComponent,
+    TarjetaTerritorioComponent
     ],
   imports: [
     CommonModule,
