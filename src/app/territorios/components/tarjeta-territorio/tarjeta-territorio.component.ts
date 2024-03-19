@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Territorio } from '../../interfaces/territorio';
 
 @Component({
   selector: 'territorios-tarjeta-territorio',
   templateUrl: './tarjeta-territorio.component.html',
   styleUrl: './tarjeta-territorio.component.css'
 })
-export class TarjetaTerritorioComponent {
+export class TarjetaTerritorioComponent implements OnInit {
+  @Input()
+  territorio!: Territorio;
 
+  ngOnInit(): void {
+    if( !this.territorio ) throw new Error('Territorio es requerido!')
+  }
 }
