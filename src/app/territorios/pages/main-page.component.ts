@@ -9,7 +9,7 @@ import { Territorio } from '../interfaces/territorio';
 })
 
 export class TerritoriosMainPageComponent {
-  constructor( private territoriosService: TerritoriosService) {}
+  constructor( private territoriosService: TerritoriosService) { }
 
   get territorios(): Territorio[] {
     return [... this.territoriosService.territorios]

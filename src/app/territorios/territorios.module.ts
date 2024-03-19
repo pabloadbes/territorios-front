@@ -8,7 +8,7 @@ import { ListadoTerritoriosComponent } from "./components/listado-territorios/li
 import { TerritorioComponent } from "./components/territorio/territorio.component";
 import { TerritoriosMainPageComponent } from "./pages/main-page.component";
 import { TarjetaTerritorioComponent } from './components/tarjeta-territorio/tarjeta-territorio.component';
-import { CargaImagenComponent } from "../shared/componentes/carga-imagen/carga-imagen.component";
+import { CargaImagenComponent } from "../shared/components/carga-imagen/carga-imagen.component";
 import { SharedModule } from "../shared/shared.module";
 
 @NgModule({

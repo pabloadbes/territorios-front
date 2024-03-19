@@ -4,7 +4,6 @@ import { Territorio } from '../../interfaces/territorio';
 @Component({
   selector: 'territorios-tarjeta-territorio',
   templateUrl: './tarjeta-territorio.component.html',
-  styleUrl: './tarjeta-territorio.component.css'
 })
 export class TarjetaTerritorioComponent implements OnInit {
   @Input()

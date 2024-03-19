@@ -1,10 +1,9 @@
 <div class="card mb-2 text-center bg-dark">
   <shared-carga-imagen
+    [url]="territorio.smallImage"
+    [alt]="territorio.nombre || 'Sin Nombre'"
     ></shared-carga-imagen>
-  <!--<img
-      [src]="territorio.smallImage"
-      [alt]="territorio.nombre"
-      class="card-img-top">-->
+
   <div class="card-body text-white">
     <strong>{{ territorio.numero }} - </strong>{{ (territorio.nombre | titlecase) || 'Sin nombre' }}
       <p class="card-text">

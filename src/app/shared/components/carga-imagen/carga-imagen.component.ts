@@ -12,7 +12,13 @@ export class CargaImagenComponent implements OnInit {
   @Input()
   alt: string = '';
 
+  hasLoaded: boolean = false;
+
   ngOnInit(): void {
     if( !this.url ) throw new Error('URL de imagen vacía');
+  }
+
+  onLoad() {
+    this.hasLoaded = true;
   }
 }

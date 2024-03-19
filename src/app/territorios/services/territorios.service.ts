@@ -15,12 +15,12 @@ export class TerritoriosService {
   private _serviceUrl: string = 'http://ubuntu-java-mysql:8080/territorios'
   constructor( private http: HttpClient ) {
 
-    this.http.get<Territorio[]>(`${this._serviceUrl}`)
+    /*this.http.get<Territorio[]>(`${this._serviceUrl}`)
       .subscribe( resp => {
         this._territorios = resp;
-      })
+      })*/
 
-/*
+
     this._territorios = [{
       idterritorios: uuid(),
       numero: 1,
@@ -57,7 +57,7 @@ export class TerritoriosService {
       nombre: 'pipo',
       smallImage: '/assets/mapa.jpeg',
       image: '/assets/mapa.jpeg'
-    }];*/
+    }];
 
     this._direcciones = [{
       id: uuid(),
